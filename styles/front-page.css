@@ -179,7 +179,13 @@ h1 {
 .iframe-spotify {
   opacity: 0.5;
 }
-
+.fa-youtube {
+  font-size: 5rem;
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  z-index: 98;
+}
 .fa-spotify {
   font-size: 5rem;
   color: #fff;
@@ -246,11 +252,17 @@ h1 {
   width: 250px;
 }
 .contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 67px;
   z-index: 100;
+  position: absolute;
+  top: 37px;
 }
 .contact-me i {
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .bio-future2 {
   z-index: 100;
