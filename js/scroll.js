@@ -3,7 +3,9 @@ const headerTextElements = document.querySelectorAll(
 );
 const chevron = document.querySelector(".fa-chevron-down");
 const content = document.querySelector(".content");
-const bioFutureParagraph = document.querySelector(".bio-future p");
+const bioFutureParagraphs = document.querySelectorAll(
+  ".bio-future p, .bio-future2 p"
+);
 const bioSection = document.querySelector(".bio-section");
 
 window.addEventListener("scroll", function () {
@@ -34,10 +36,14 @@ window.addEventListener("scroll", function () {
   // Adjust the line-height of .bio-future p based on scroll position
   const bioSectionTop = bioSection.getBoundingClientRect().top;
   const windowHeight = window.innerHeight;
+
   if (bioSectionTop < windowHeight && bioSectionTop > 0) {
     const percentageVisible = (windowHeight - bioSectionTop) / windowHeight;
-    const newLineHeight = 5 + percentageVisible * (25 - 5);
-    bioFutureParagraph.style.lineHeight = `${newLineHeight}px`;
+    const newLineHeight = 1 + percentageVisible * (25 - 5);
+
+    bioFutureParagraphs.forEach((paragraph) => {
+      paragraph.style.lineHeight = `${newLineHeight}px`;
+    });
   }
 });
 
