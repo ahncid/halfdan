@@ -9,31 +9,24 @@ const bioFutureParagraphs = document.querySelectorAll(
 const bioSection = document.querySelector(".bio-section");
 
 window.addEventListener("scroll", function () {
-  // Calculate the transform for the content based on scroll position
   const translateYValueContent = window.scrollY / 1.5;
 
-  // Calculate the transform for the text based on scroll position
   const translateYValueText = window.scrollY / 2.5;
 
-  // Apply the transform to each text element inside the header using translate3d
   headerTextElements.forEach((textElement) => {
     textElement.style.transform = `translate3d(0, -${translateYValueText}px, 0)`;
   });
 
-  // Apply the transform to the chevron using translate3d
   chevron.style.transform = `translate3d(0, ${translateYValueContent}px, 0)`;
 
-  // Apply the transform to the content container using translate3d
   content.style.transform = `translate3d(0, ${translateYValueContent}px, 0)`;
 
-  // Adjust the z-index based on scroll position
   if (window.scrollY > 50) {
     content.style.zIndex = "3";
   } else {
     content.style.zIndex = "1";
   }
 
-  // Adjust the line-height of .bio-future p based on scroll position
   const bioSectionTop = bioSection.getBoundingClientRect().top;
   const windowHeight = window.innerHeight;
 
