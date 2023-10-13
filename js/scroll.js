@@ -36,7 +36,7 @@ window.addEventListener("scroll", function () {
   const windowHeight = window.innerHeight;
   if (bioSectionTop < windowHeight && bioSectionTop > 0) {
     const percentageVisible = (windowHeight - bioSectionTop) / windowHeight;
-    const newLineHeight = 5 + percentageVisible * (15 - 5);
+    const newLineHeight = 5 + percentageVisible * (25 - 5);
     bioFutureParagraph.style.lineHeight = `${newLineHeight}px`;
   }
 });

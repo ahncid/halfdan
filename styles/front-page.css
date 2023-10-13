@@ -227,14 +227,13 @@ h1 {
   left: 150px;
 }
 .bio-future h3 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   position: relative;
   margin-bottom: 7px;
 }
 .bio-future p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   width: 250px;
-  line-height: 1px;
 }
 .contact-me {
   z-index: 100;
