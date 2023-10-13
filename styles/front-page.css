@@ -101,6 +101,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 .content img {
   object-fit: 100%;
@@ -118,6 +119,7 @@ h1 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   pointer-events: none;
 }
+
 .content h2 {
   position: absolute;
   top: 100px;
@@ -254,4 +256,13 @@ header,
 .bio-future p {
   backface-visibility: hidden;
   transform-style: preserve-3d;
+}
+.fa-chevron-up {
+  position: absolute;
+  font-size: 4rem;
+  color: #fff;
+  z-index: 99;
+  bottom: 0;
+  left: 50%;
+  opacity: 0.8;
 }
