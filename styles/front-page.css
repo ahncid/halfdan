@@ -45,7 +45,7 @@ h1 {
   position: absolute;
   font-size: 3rem;
   color: #f2f2f2;
-  z-index: 99;
+  z-index: 98;
   top: 40%;
 }
 .header-text {
@@ -97,7 +97,7 @@ h1 {
   height: 100vh;
   position: relative;
   margin-top: 100vh;
-  z-index: 1;
+  z-index: 98;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,9 +142,12 @@ h1 {
   top: 50px;
   right: 50px;
   gap: 7px;
+  z-index: 98;
 }
 .spotify iframe {
   opacity: 0.5;
+  position: relative;
+  z-index: 98;
 }
 
 .soundcloud {
@@ -168,6 +171,7 @@ h1 {
   position: absolute;
   top: 150px;
   margin-right: 250px;
+  z-index: 98;
 }
 .spotify,
 .iframe-spotify {
@@ -180,6 +184,7 @@ h1 {
   position: absolute;
   top: 150px;
   margin-left: 250px;
+  z-index: 98;
 }
 .iframe-div,
 .iframe {
@@ -210,7 +215,7 @@ h1 {
   gap: 17px;
   height: 100vh;
   position: relative;
-  z-index: 99;
+  z-index: 100;
 }
 .bio-section img {
   position: absolute;
@@ -218,6 +223,7 @@ h1 {
   object-position: center;
   width: 100%;
   height: 100%;
+  z-index: 100;
 }
 .bio-future {
   z-index: 100;
@@ -241,4 +247,11 @@ h1 {
 .contact-me i {
   color: #fff;
   font-size: 2rem;
+}
+header,
+.content,
+.fa-chevron-down,
+.bio-future p {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
