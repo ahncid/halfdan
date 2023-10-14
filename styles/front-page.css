@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -288,3 +289,14 @@ header,
   left: 50%;
   opacity: 0.8;
 }
+/*.another-section {
+  position: relative;
+  z-index: 3;
+  background-image: url(/images/section\ fire.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  padding-bottom: 1550px;
+  margin-top: 200%;
+}*/
